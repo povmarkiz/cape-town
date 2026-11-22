@@ -205,8 +205,10 @@ h2{font-size:clamp(28px,4vw,44px);font-weight:700;max-width:18ch}
 @media (max-width:520px){.info{grid-template-columns:1fr;gap:10px}.info-i{display:grid;grid-template-columns:30px 1fr;column-gap:14px;padding:18px}.info-i svg{grid-row:span 2;margin:0}}
 
 /* организатор */
-.org{display:grid;grid-template-columns:auto 1fr;gap:44px;align-items:center;max-width:900px}
-.org-ph{width:220px;height:220px;border-radius:50%;overflow:hidden;box-shadow:0 0 0 8px var(--shell),0 0 0 9px var(--line)}
+.org{display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:start;max-width:980px;margin-bottom:56px}
+.org p+p{margin-top:12px}
+.wm-h{font-size:clamp(22px,2.6vw,28px);margin-bottom:20px}
+.org-ph{width:240px;height:240px;border-radius:50%;overflow:hidden;box-shadow:0 0 0 8px var(--shell),0 0 0 9px var(--line)}
 .org h2{margin-bottom:6px}
 .org-role{color:var(--ink-2);margin-bottom:18px}
 .org-role a{text-decoration-color:var(--protea);text-underline-offset:3px}
@@ -304,8 +306,8 @@ footer a{color:var(--shell)}
     <nav class="nav-links" aria-label="Разделы">
       <a href="#route">Маршрут</a>
       <a href="#villas">Виллы</a>
-      <a href="#organizer">Организатор</a>
       <a href="#price">Стоимость</a>
+      <a href="#organizer">Организатор</a>
       <a href="#book" class="cta">Записаться</a>
     </nav>
   </div>
@@ -552,16 +554,6 @@ footer a{color:var(--shell)}
   </div>
 </section>
 
-<section class="sec" id="organizer">
-  <div class="wrap org">
-    <div class="org-ph"><img src="assets/img/mark.jpg" alt="Марк, организатор тура" loading="lazy"></div>
-    <div>
-      <h2>Марк</h2>
-      <p class="org-role">Организатор, автор блога <a href="https://instagram.com/pov.markiz" target="_blank" rel="noopener">@pov.markiz</a></p>
-      <p>Сертифицированный яхтенный капитан и путешественник. Уже несколько лет вожу небольшие группы в путешествия по Турции, Канарам, Мадейре, Японии, Африке и дальше.</p>
-    </div>
-  </div>
-</section>
 
 <section class="sec price" id="price">
   <div class="wrap">
@@ -632,12 +624,18 @@ footer a{color:var(--shell)}
   <div class="band" role="presentation"></div>
 </section>
 
-<section class="sec why-me" id="why-me">
+<section class="sec why-me" id="organizer">
   <div class="wrap">
-    <div class="wm-top">
-      <h2>Зачем я это делаю</h2>
-      <p class="wm-lead">По основной профессии я продакт-менеджер. Однажды я заметил удивительную вещь: в поездках у меня не болит голова, я просыпаюсь рано и чувствую себя прекрасно, совсем не как дома. Каким бы загруженным я ни был, путешествия всегда помогали выдохнуть и снова почувствовать вкус жизни. Так они и стали её неотъемлемой частью.</p>
+    <div class="org">
+      <div class="org-ph"><img src="assets/img/mark.jpg" alt="Марк, организатор тура" loading="lazy"></div>
+      <div>
+        <h2>Марк</h2>
+        <p class="org-role">Организатор, автор блога <a href="https://instagram.com/pov.markiz" target="_blank" rel="noopener">@pov.markiz</a></p>
+        <p>Сертифицированный яхтенный капитан и путешественник. Уже несколько лет вожу небольшие группы в путешествия по Турции, Канарам, Мадейре, Японии, Африке и дальше.</p>
+        <p>По основной профессии я продакт-менеджер. Однажды я заметил удивительную вещь: в поездках у меня не болит голова, я просыпаюсь рано и чувствую себя прекрасно, совсем не как дома. Каким бы загруженным я ни был, путешествия всегда помогали выдохнуть и снова почувствовать вкус жизни. Так они и стали её неотъемлемой частью.</p>
+      </div>
     </div>
+    <h3 class="wm-h">Зачем я это делаю</h3>
     <div class="wm-grid">
       <div class="wm-i"><h3>Каждая поездка как кино</h3><p>Я снимаю его на дрон, камеру и телефон. А сценарий складывается из мест, которые хочется показать: редких, настоящих, где бывали единицы.</p></div>
       <div class="wm-i"><h3>Команда остаётся</h3><p>Я за лёгкость, открытость и дружбу. После туров мы продолжаем общаться, видимся, снова едем куда-то вместе, помогаем друг другу, открываем новое и вдохновляем.</p></div>
