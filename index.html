@@ -15,14 +15,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#EEF3F1">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2317323F'/%3E%3Cpath d='M4 23l7-9 4 5 3-4 10 8z' fill='%23F3C58F'/%3E%3Ccircle cx='22' cy='10' r='3' fill='%23E9B3A8'/%3E%3C/svg%3E">
-<link rel="preload" href="assets/fonts/unbounded-cyrillic-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/prata-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-@font-face{font-family:'Unbounded';font-style:normal;font-weight:300;font-display:swap;src:url(assets/fonts/unbounded-cyrillic-300-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-@font-face{font-family:'Unbounded';font-style:normal;font-weight:300;font-display:swap;src:url(assets/fonts/unbounded-latin-300-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Unbounded';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/unbounded-cyrillic-400-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-@font-face{font-family:'Unbounded';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/unbounded-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Unbounded';font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/unbounded-cyrillic-500-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-@font-face{font-family:'Unbounded';font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/unbounded-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Prata';font-style:normal;font-weight:300 600;font-display:swap;src:url(assets/fonts/prata-cyrillic-400-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Prata';font-style:normal;font-weight:300 600;font-display:swap;src:url(assets/fonts/prata-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:'Golos Text';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/golos-text-cyrillic-400-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
 @font-face{font-family:'Golos Text';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/golos-text-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:'Golos Text';font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/golos-text-cyrillic-500-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
@@ -34,7 +30,7 @@
   --protea:#E9B3A8; --protea-lt:#F6DDD7; --apricot:#F3C58F; --apricot-lt:#FAE6CC;
   --fynbos:#9FB49B; --fynbos-lt:#DCE6D8; --lagoon:#BFDCDB; --lagoon-lt:#DDEDEC;
   --line:rgba(23,50,63,.12);
-  --display:'Unbounded', system-ui, sans-serif;
+  --display:'Prata', Georgia, serif;
   --body:'Golos Text', system-ui, sans-serif;
   --wrap:1160px;
   --band:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='22' viewBox='0 0 120 22'%3E%3Cg stroke='%2317323F' stroke-width='1.3' stroke-linejoin='round'%3E%3Crect x='.65' y='.65' width='29' height='20.7' fill='%23BFDCDB'/%3E%3Cpath d='M3 19L15 4l12 15z' fill='%23FBF8F3'/%3E%3Crect x='29.65' y='.65' width='30' height='20.7' fill='%23F3C58F'/%3E%3Cpath d='M33 19v-5h6v-5h6v-5h6v15z' fill='%23FBF8F3'/%3E%3Crect x='59.65' y='.65' width='30' height='20.7' fill='%23E9B3A8'/%3E%3Cpath d='M63 6l12 7 12-7M63 13l12 7 12-7' fill='none'/%3E%3Crect x='89.65' y='.65' width='29.7' height='20.7' fill='%239FB49B'/%3E%3Cpath d='M104.5 3l8 8-8 8-8-8z' fill='%23FBF8F3'/%3E%3C/g%3E%3C/svg%3E");
@@ -48,7 +44,7 @@ a{color:inherit}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 :focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:6px}
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
-h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:-.02em;line-height:1.1}
+h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:-.01em;line-height:1.12}
 h2{font-size:clamp(28px,4.2vw,46px);font-weight:300;max-width:18ch}
 .sec{padding:96px 0}
 .sec-head{margin-bottom:44px;display:grid;gap:16px}
@@ -86,7 +82,7 @@ h2{font-size:clamp(28px,4.2vw,46px);font-weight:300;max-width:18ch}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(23,50,63,.45) 0%,rgba(23,50,63,.18) 30%,rgba(23,50,63,.28) 50%,rgba(23,50,63,.72) 100%)}
 .hero-in{padding-bottom:40px;padding-top:150px}
 .hero-kicker{font-size:16px;margin-bottom:18px;opacity:.95}
-.hero h1{font-size:clamp(50px,13vw,176px);font-weight:300;letter-spacing:-.05em;line-height:.9;margin-left:-.04em}
+.hero h1{font-size:clamp(58px,15vw,176px);font-weight:300;letter-spacing:-.02em;line-height:.95;margin-left:-.03em}
 .hero-sub{font-size:clamp(18px,2.4vw,24px);margin-top:18px;max-width:30ch;line-height:1.35}
 .facts{position:relative;background:var(--shell);color:var(--ink);border-radius:22px 22px 0 0;margin-top:36px}
 .facts-grid{display:grid;grid-template-columns:repeat(4,1fr) auto;align-items:center}
@@ -157,7 +153,7 @@ h2{font-size:clamp(28px,4.2vw,46px);font-weight:300;max-width:18ch}
 .day-villa{position:absolute;left:14px;top:14px;background:rgba(251,248,243,.92);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:500}
 .day-body{padding:22px 24px 24px;display:flex;flex-direction:column;flex:1}
 .day-head{display:flex;align-items:baseline;gap:14px;margin-bottom:10px}
-.day-n{font:300 44px/1 var(--display);letter-spacing:-.04em}
+.day-n{font:400 46px/1 var(--display);letter-spacing:-.02em}
 .day-date{color:var(--ink-2);font-size:15px}
 .day h3{font-size:21px;margin-bottom:10px}
 .day p{font-size:15.5px;color:var(--ink-2)}
@@ -220,7 +216,7 @@ h2{font-size:clamp(28px,4.2vw,46px);font-weight:300;max-width:18ch}
 /* стоимость */
 .price{background:var(--shell)}
 .price-top{display:grid;grid-template-columns:auto 1fr;gap:20px 48px;align-items:end;margin-bottom:40px}
-.price-num{font:300 clamp(64px,11vw,128px)/.9 var(--display);letter-spacing:-.05em}
+.price-num{font:400 clamp(64px,11vw,128px)/.9 var(--display);letter-spacing:-.02em}
 .price-meta{display:flex;flex-wrap:wrap;gap:8px;padding-bottom:10px}
 .pill{padding:8px 14px;border-radius:999px;background:var(--mist);font-size:15px}
 .price-sub{color:var(--ink-2);grid-column:1/-1;margin-top:-6px}
@@ -326,7 +322,7 @@ footer a{color:var(--shell)}
 
 <section class="intro">
   <div class="wrap intro-grid">
-    <h2>Неделя, в которую помещается целый континент</h2>
+    <h2>Восемь дней на краю Африки</h2>
     <div>
       <p>Кейптаун стоит между горами и океаном. Утром кофе с видом на Столовую гору, днём дорога над обрывом и пингвины на пляже, вечером закат над Атлантикой и ужин всей компанией на вилле.</p>
       <p>За восемь дней мы увидим город с вершины и с палубы яхты, доедем до края континента, проведём день в винодельне среди гор и выедем на сафари к жирафам и львам. Без автобусов и толп: маленькая группа, свои машины и свой ритм.</p>
@@ -436,8 +432,8 @@ footer a{color:var(--shell)}
   <div class="day-body">
     <div class="day-head"><span class="day-n">2</span><span class="day-date">сб, 6 февраля</span></div>
     <h3>Город с высоты</h3>
-    <p>Поднимаемся на Столовую гору по канатной дороге и смотрим на Кейптаун сверху: океан, пляжи, Lion's Head. Потом гуляем по цветным улицам Бо-Каапа и ужинаем у воды на Waterfront.</p>
-    <p class="day-high"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5l2.2 5.6 6 .4-4.6 3.9 1.5 5.9L10 14l-5.1 3.3 1.5-5.9L1.8 7.5l6-.4z"/></svg><span><b>Главное дня.</b> Вершина Столовой горы, одного из семи новых чудес природы.</span></p>
+    <p>Поднимаемся на Столовую гору по канатной дороге и смотрим на Кейптаун сверху: океан, пляжи, Lion's Head. Потом гуляем по цветным улицам Бо-Каапа, а вечером ужинаем в марине V&amp;A Waterfront, среди яхт и старого порта. Здесь же у причалов живут морские котики, с ними обязательно познакомимся.</p>
+    <p class="day-high"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5l2.2 5.6 6 .4-4.6 3.9 1.5 5.9L10 14l-5.1 3.3 1.5-5.9L1.8 7.5l6-.4z"/></svg><span><b>Главное дня.</b> Вершина Столовой горы и знакомство с морскими котиками в порту.</span></p>
   </div>
 </article>
 <article class="day" id="day-3">
@@ -446,8 +442,8 @@ footer a{color:var(--shell)}
   <div class="day-body">
     <div class="day-head"><span class="day-n">3</span><span class="day-date">вс, 7 февраля</span></div>
     <h3>Край континента</h3>
-    <p>Едем по Chapman's Peak Drive: дорога вырублена в скале прямо над океаном. Дальше мыс Доброй Надежды, маяк, обрывы и бабуины. На обратном пути заезжаем на секретный спот к пингвинам, где почти нет людей.</p>
-    <p class="day-high"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5l2.2 5.6 6 .4-4.6 3.9 1.5 5.9L10 14l-5.1 3.3 1.5-5.9L1.8 7.5l6-.4z"/></svg><span><b>Главное дня.</b> Chapman's Peak, одна из самых красивых прибрежных дорог мира.</span></p>
+    <p>Едем по Chapman's Peak Drive: безумно красивая дорога, вырубленная в скале прямо над океаном. Дальше мыс Доброй Надежды, маяк, обрывы и бабуины. На обратном пути заезжаем на секретный спот к пингвинам: никаких заборов, они гуляют в метре от вас.</p>
+    <p class="day-high"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5l2.2 5.6 6 .4-4.6 3.9 1.5 5.9L10 14l-5.1 3.3 1.5-5.9L1.8 7.5l6-.4z"/></svg><span><b>Главное дня.</b> Пингвины на расстоянии вытянутой руки, мыс Доброй Надежды и бабуины.</span></p>
   </div>
 </article>
 <article class="day" id="day-4">
@@ -456,18 +452,18 @@ footer a{color:var(--shell)}
   <div class="day-body">
     <div class="day-head"><span class="day-n">4</span><span class="day-date">пн, 8 февраля</span></div>
     <h3>Сад над кронами</h3>
-    <p>Кирстенбош называют одним из самых красивых ботанических садов мира. Гуляем среди протей и финбоша и проходим по изогнутому мосту над кронами деревьев. Вечером купаемся в природных океанских бассейнах.</p>
+    <p>Кирстенбош называют одним из самых красивых ботанических садов мира. Гуляем среди протей и финбоша и проходим по изогнутому мосту над кронами деревьев. Вечером едем на тёплую сторону полуострова, в бухту Фолс-Бей, и купаемся в океанском бассейне Сент-Джеймс у разноцветных пляжных домиков.</p>
     <p class="day-high"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5l2.2 5.6 6 .4-4.6 3.9 1.5 5.9L10 14l-5.1 3.3 1.5-5.9L1.8 7.5l6-.4z"/></svg><span><b>Главное дня.</b> Мост «Бумсланг» над деревьями с видом на склоны Столовой горы.</span></p>
   </div>
 </article>
 <article class="day" id="day-5">
-  <div class="day-ph"><img class="" src="assets/img/tl-09-s.webp" srcset="assets/img/tl-09-s.webp 800w, assets/img/tl-09.webp 1600w" sizes="(min-width: 900px) 380px, 82vw" alt="Морские котики на причале" loading="lazy" decoding="async">
+  <div class="day-ph"><img class="" src="assets/img/tl-09-s.webp" srcset="assets/img/tl-09-s.webp 800w, assets/img/tl-09.webp 1600w" sizes="(min-width: 900px) 380px, 82vw" alt="Яхта под парусом в океане" loading="lazy" decoding="async">
     <span class="day-villa">Camps Bay</span></div>
   <div class="day-body">
     <div class="day-head"><span class="day-n">5</span><span class="day-date">вт, 9 февраля</span></div>
     <h3>Атлантика с палубы</h3>
-    <p>Переезжаем во вторую виллу и выходим на яхте в океан. С воды город выглядит иначе: горы поднимаются прямо из волн, рядом плавают котики, иногда подходят дельфины. Вечером первый закат в Camps Bay.</p>
-    <p class="day-high"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5l2.2 5.6 6 .4-4.6 3.9 1.5 5.9L10 14l-5.1 3.3 1.5-5.9L1.8 7.5l6-.4z"/></svg><span><b>Главное дня.</b> Котики и дельфины в паре метров от яхты.</span></p>
+    <p>Переезжаем во вторую виллу в Camps Bay. А потом главное событие дня: выходим на парусной яхте в открытую Атлантику. Ветер, крен и брызги, а с воды видно, как горы поднимаются прямо из океана. Рядом плавают котики, иногда подходят дельфины. Вечером первый закат в Camps Bay.</p>
+    <p class="day-high"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5l2.2 5.6 6 .4-4.6 3.9 1.5 5.9L10 14l-5.1 3.3 1.5-5.9L1.8 7.5l6-.4z"/></svg><span><b>Главное дня.</b> Яхтинг в открытом океане: паруса, ветер, котики и дельфины в паре метров от борта.</span></p>
   </div>
 </article>
 <article class="day" id="day-6">
@@ -496,7 +492,7 @@ footer a{color:var(--shell)}
   <div class="day-body">
     <div class="day-head"><span class="day-n">8</span><span class="day-date">пт, 12 февраля</span></div>
     <h3>До встречи, Кейптаун</h3>
-    <p>Прощальный завтрак всей группой и разъезд. Кто улетает позже, идёт со мной на серфинг в Muizenberg: вода там теплее, а волны мягкие и подходят новичкам. Вечером едем в казино GrandWest.</p>
+    <p>Прощальный завтрак всей группой и разъезд. Если хотите задержаться, приглашаю вас со мной на серфинг в Muizenberg, где тёплая вода и мягкие волны для новичков, а вечером в казино GrandWest.</p>
     <p class="day-high"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5l2.2 5.6 6 .4-4.6 3.9 1.5 5.9L10 14l-5.1 3.3 1.5-5.9L1.8 7.5l6-.4z"/></svg><span><b>Главное дня.</b> Первая волна на доске для тех, кто задерживается.</span></p>
   </div>
 </article>
@@ -518,7 +514,7 @@ footer a{color:var(--shell)}
         <p class="villa-when">5–9 февраля, 4 ночи</p>
         <p>Мой любимый район: тихий, безопасный, с длинным песчаным пляжем, где каждый вечер безумно красивые закаты и на волнах катаются кайтеры и виндсёрферы.</p>
         <p>Вилла уединённая, с собственным садом и террасой. Идеальное место, чтобы познакомиться поближе и прожить первые дни спокойно и красиво.</p>
-        <div class="villa-tags"><span>уютная</span><span>6 спален</span><span>3 ванные</span><span>своя территория</span><span>пляж рядом</span></div>
+        <div class="villa-tags"><span>6 спален</span><span>3 ванные</span><span>терраса с грилем</span><span>своя территория</span><span>пляж рядом</span></div>
       </div>
 <div class="vg" data-count="10"><button class="vg-item" data-lb="v1" data-i="0" aria-label="Фото Вилла в Sunset Beach, 1 из 10"><img class="" src="assets/img/v1-01-s.webp" srcset="assets/img/v1-01-s.webp 800w, assets/img/v1-01.webp 1600w" sizes="(min-width: 900px) 30vw, 82vw" alt="Вилла в Sunset Beach, фото 1" loading="lazy" decoding="async"></button><button class="vg-item" data-lb="v1" data-i="1" aria-label="Фото Вилла в Sunset Beach, 2 из 10"><img class="" src="assets/img/v1-02-s.webp" srcset="assets/img/v1-02-s.webp 800w, assets/img/v1-02.webp 1600w" sizes="(min-width: 900px) 30vw, 82vw" alt="Вилла в Sunset Beach, фото 2" loading="lazy" decoding="async"></button><button class="vg-item" data-lb="v1" data-i="2" aria-label="Фото Вилла в Sunset Beach, 3 из 10"><img class="" src="assets/img/v1-03-s.webp" srcset="assets/img/v1-03-s.webp 800w, assets/img/v1-03.webp 1600w" sizes="(min-width: 900px) 30vw, 82vw" alt="Вилла в Sunset Beach, фото 3" loading="lazy" decoding="async"></button><button class="vg-item" data-lb="v1" data-i="3" aria-label="Фото Вилла в Sunset Beach, 4 из 10"><img class="" src="assets/img/v1-04-s.webp" srcset="assets/img/v1-04-s.webp 800w, assets/img/v1-04.webp 1600w" sizes="(min-width: 900px) 30vw, 82vw" alt="Вилла в Sunset Beach, фото 4" loading="lazy" decoding="async"></button><button class="vg-item" data-lb="v1" data-i="4" aria-label="Фото Вилла в Sunset Beach, 5 из 10"><img class="" src="assets/img/v1-05-s.webp" srcset="assets/img/v1-05-s.webp 800w, assets/img/v1-05.webp 1600w" sizes="(min-width: 900px) 30vw, 82vw" alt="Вилла в Sunset Beach, фото 5" loading="lazy" decoding="async"></button><button class="vg-item" data-lb="v1" data-i="5" aria-label="Фото Вилла в Sunset Beach, 6 из 10"><img class="" src="assets/img/v1-06-s.webp" srcset="assets/img/v1-06-s.webp 800w, assets/img/v1-06.webp 1600w" sizes="(min-width: 900px) 30vw, 82vw" alt="Вилла в Sunset Beach, фото 6" loading="lazy" decoding="async"></button><button class="vg-item" data-lb="v1" data-i="6" aria-label="Фото Вилла в Sunset Beach, 7 из 10"><img class="" src="assets/img/v1-07-s.webp" srcset="assets/img/v1-07-s.webp 800w, assets/img/v1-07.webp 1600w" sizes="(min-width: 900px) 30vw, 82vw" alt="Вилла в Sunset Beach, фото 7" loading="lazy" decoding="async"></button><button class="vg-item" data-lb="v1" data-i="7" aria-label="Фото Вилла в Sunset Beach, 8 из 10"><img class="" src="assets/img/v1-08-s.webp" srcset="assets/img/v1-08-s.webp 800w, assets/img/v1-08.webp 1600w" sizes="(min-width: 900px) 30vw, 82vw" alt="Вилла в Sunset Beach, фото 8" loading="lazy" decoding="async"></button><button class="vg-item" data-lb="v1" data-i="8" aria-label="Фото Вилла в Sunset Beach, 9 из 10"><img class="" src="assets/img/v1-09-s.webp" srcset="assets/img/v1-09-s.webp 800w, assets/img/v1-09.webp 1600w" sizes="(min-width: 900px) 30vw, 82vw" alt="Вилла в Sunset Beach, фото 9" loading="lazy" decoding="async"></button><button class="vg-item" data-lb="v1" data-i="9" aria-label="Фото Вилла в Sunset Beach, 10 из 10"><img class="" src="assets/img/v1-10-s.webp" srcset="assets/img/v1-10-s.webp 800w, assets/img/v1-10.webp 1600w" sizes="(min-width: 900px) 30vw, 82vw" alt="Вилла в Sunset Beach, фото 10" loading="lazy" decoding="async"></button></div>
     </div>
@@ -530,7 +526,7 @@ footer a{color:var(--shell)}
         <p class="villa-when">9–12 февраля, 3 ночи</p>
         <p>Самый богатый и красивый район города. Пляж в пяти минутах пешком, вокруг кафе и рестораны, а над головой горы Двенадцать апостолов.</p>
         <p>Отсюда ближе всего до самых инстаграмных мест Кейптауна, а закаты над Атлантикой смотрим прямо с набережной.</p>
-        <div class="villa-tags"><span>4 спальни</span><span>пляж в 5 минутах</span><span>кафе и рестораны рядом</span></div>
+        <div class="villa-tags"><span>4 спальни</span><span>пляж в 5 минутах</span><span>инстаграмное место</span></div>
       </div>
     </div>
 
@@ -597,7 +593,7 @@ footer a{color:var(--shell)}
   <div class="wrap">
     <div class="sec-head"><h2>Частые вопросы</h2></div>
     <div class="faq-list">
-<details class="faq-i"><summary>Какая погода в феврале?</summary><p>Разгар лета. Днём обычно +25…28 и солнце, вечером прохладнее, часто дует ветер. Атлантика бодрящая, около +15, но в бухтах и природных бассейнах купаться приятно.</p></details>
+<details class="faq-i"><summary>Какая погода в феврале?</summary><p>Разгар лета. Днём обычно +25…28 и солнце, вечером прохладнее, часто дует ветер. Атлантика бодрящая, около +15, зато в бухте Фолс-Бей вода прогревается примерно до +20, там и купаемся.</p></details>
 <details class="faq-i"><summary>Как туда долететь?</summary><p>Прямых рейсов из Москвы нет, летим с одной-двумя пересадками, например через Абу-Даби, Дубай, Стамбул или Аддис-Абебу. В среднем около 900 € туда и обратно. Помогу подобрать удобный вариант и состыковаться с группой.</p></details>
 <details class="faq-i"><summary>Насколько это безопасно?</summary><p>Полностью. Живём в двух самых спокойных районах, передвигаемся на своих машинах, маршрут проверен лично. Я рядом всю поездку.</p></details>
 <details class="faq-i"><summary>Как платить на месте?</summary><p>Российские карты в ЮАР не работают. Берите наличные доллары или евро и меняйте на рэнды на месте, либо карту зарубежного банка. Подскажу, сколько взять.</p></details>
