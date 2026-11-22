@@ -279,6 +279,24 @@ footer a{color:var(--shell)}
 .wm-final{font:700 clamp(24px,3.2vw,36px)/1.2 var(--display);letter-spacing:-.025em;margin-top:56px;max-width:22ch}
 @media (max-width:860px){.wm-top,.wm-grid{grid-template-columns:1fr;gap:18px}.wm-lead{font-size:18px}}
 
+/* другие туры */
+.tours{background:var(--mist)}
+.tour-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.tour{display:flex;flex-direction:column;background:var(--shell);border-radius:22px;overflow:hidden}
+.tour-ph{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--lagoon-lt)}
+.tour-badge{position:absolute;left:14px;top:14px;background:rgba(251,248,243,.92);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600}
+.tour h3{font-size:20px;margin:20px 22px 6px}
+.tour-sub{margin:0 22px 16px;color:var(--ink-2);font-size:15.5px}
+.tour-meta{margin:auto 22px 22px;padding-top:14px;border-top:1px solid var(--line);font-size:15px;font-weight:600;color:var(--ink)}
+.car-mob{display:none}
+@media (max-width:860px){
+  .tour-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -22px;padding:0 22px;scroll-padding:0 22px;gap:16px;scrollbar-width:none}
+  .tour-grid::-webkit-scrollbar{display:none}
+  .tour{flex:0 0 80%;scroll-snap-align:start}
+  .car-mob{display:flex;margin-top:18px}
+  .why-card{flex:0 0 78%}
+}
+
 /* мобильная кнопка */
 .mcta{position:fixed;left:16px;right:16px;bottom:max(14px,env(safe-area-inset-bottom));z-index:40;transform:translateY(140%);transition:transform .35s;display:none}
 .mcta.on{transform:none}
@@ -375,7 +393,7 @@ footer a{color:var(--shell)}
       <h2>Почему Кейптаун</h2>
       <p>Пингвины живут здесь по соседству с винодельнями, а саванна начинается в паре часов от пляжа. Одно из самых фотогеничных мест на планете.</p>
     </div>
-    <div class="why-grid">
+    <div class="why-grid" id="whyg">
 <article class="why-card">
   <div class="why-ph"><img class="" src="assets/img/tl-07-s.webp" srcset="assets/img/tl-07-s.webp 800w, assets/img/tl-07.webp 1600w" sizes="(min-width: 900px) 25vw, 78vw" alt="Край континента" loading="lazy" decoding="async"></div>
   <h3>Край континента</h3>
@@ -416,6 +434,13 @@ footer a{color:var(--shell)}
   <h3>Лето в феврале</h3>
   <p>Пока дома зима, здесь +27 и солнце. Виза россиянам не нужна.</p>
 </article>
+    </div>
+    <div class="car-ctl car-mob">
+      <span class="count" id="whyg-count">1 / 8</span>
+      <div class="car-btns">
+        <button class="circ" data-scroll="whyg" data-dir="-1" aria-label="Предыдущая карточка"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button class="circ" data-scroll="whyg" data-dir="1" aria-label="Следующая карточка"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
     </div>
   </div>
 </section>
@@ -645,6 +670,48 @@ footer a{color:var(--shell)}
     <p class="wm-final">Главное — добро, которое мы несём в мир.</p>
   </div>
 </section>
+
+<section class="sec tours" id="tours">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Другие мои поездки</h2>
+      <p>Если даты или направление не подошли, вот куда мы едем дальше.</p>
+    </div>
+    <div class="tour-grid" id="toursg">
+<article class="tour">
+  <div class="tour-ph"><img class="" src="assets/img/tour-turkey-s.webp" srcset="assets/img/tour-turkey-s.webp 800w, assets/img/tour-turkey.webp 1600w" sizes="(min-width: 900px) 25vw, 80vw" alt="Яхтинг в Турции" loading="lazy" decoding="async"><span class="tour-badge">Анонс скоро</span></div>
+  <h3>Яхтинг в Турции</h3>
+  <p class="tour-sub">Неделя на яхте вдоль бирюзовых бухт</p>
+  <p class="tour-meta">8–15 мая 2027</p>
+</article>
+<article class="tour">
+  <div class="tour-ph"><img class="" src="assets/img/tour-mauritius-s.webp" srcset="assets/img/tour-mauritius-s.webp 800w, assets/img/tour-mauritius.webp 1600w" sizes="(min-width: 900px) 25vw, 80vw" alt="Маврикий" loading="lazy" decoding="async"><span class="tour-badge">Анонс скоро</span></div>
+  <h3>Маврикий</h3>
+  <p class="tour-sub">Вилла у океана, киты и гидросамолёт</p>
+  <p class="tour-meta">12–21 августа 2027</p>
+</article>
+<article class="tour">
+  <div class="tour-ph"><img class="" src="assets/img/tour-japan-s.webp" srcset="assets/img/tour-japan-s.webp 800w, assets/img/tour-japan.webp 1600w" sizes="(min-width: 900px) 25vw, 80vw" alt="Япония" loading="lazy" decoding="async"><span class="tour-badge">Анонс скоро</span></div>
+  <h3>Япония</h3>
+  <p class="tour-sub">Храмы, рёканы и настоящая Япония</p>
+  <p class="tour-meta">10–20 ноября 2027</p>
+</article>
+<article class="tour">
+  <div class="tour-ph"><img class="" src="assets/img/tour-seychelles-s.webp" srcset="assets/img/tour-seychelles-s.webp 800w, assets/img/tour-seychelles.webp 1600w" sizes="(min-width: 900px) 25vw, 80vw" alt="Сейшелы на яхте" loading="lazy" decoding="async"><span class="tour-badge">Анонс скоро</span></div>
+  <h3>Сейшелы на яхте</h3>
+  <p class="tour-sub">Новый год среди гранитных островов</p>
+  <p class="tour-meta">1–8 января 2028</p>
+</article>
+    </div>
+    <div class="car-ctl car-mob">
+      <span class="count" id="toursg-count">1 / 4</span>
+      <div class="car-btns">
+        <button class="circ" data-scroll="toursg" data-dir="-1" aria-label="Предыдущая поездка"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button class="circ" data-scroll="toursg" data-dir="1" aria-label="Следующая поездка"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
 
 <footer>
@@ -691,6 +758,8 @@ footer a{color:var(--shell)}
   // счётчик галереи (мобайл)
   var gal = document.getElementById('gal'), galCount = document.getElementById('gal-count');
   gal.addEventListener('scroll', function(){ galCount.textContent = Math.min(idx(gal) + 1, gal.children.length) + ' / ' + gal.children.length; }, {passive:true});
+  ['whyg','toursg'].forEach(function(id){ var el = document.getElementById(id), c = document.getElementById(id + '-count'); if (!el || !c) return;
+    el.addEventListener('scroll', function(){ var k = idx(el); if (el.scrollLeft + el.clientWidth >= el.scrollWidth - 4) k = el.children.length - 1; c.textContent = Math.min(k + 1, el.children.length) + ' / ' + el.children.length; }, {passive:true}); });
   // точки маршрута
   var days = document.getElementById('days'), dots = document.getElementById('days-dots');
   for (var i = 0; i < days.children.length; i++) dots.appendChild(document.createElement('i'));
