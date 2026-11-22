@@ -261,6 +261,19 @@ footer{background:var(--ink);color:rgba(251,248,243,.7);padding:28px 0 40px;font
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 footer a{color:var(--shell)}
 
+/* зачем я это делаю */
+.why-me{background:var(--shell)}
+.wm-top{display:grid;grid-template-columns:5fr 7fr;gap:48px;align-items:start;margin-bottom:44px}
+.wm-lead{font-size:20px;line-height:1.6;max-width:60ch}
+.wm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.wm-i{border-radius:22px;padding:28px;background:var(--fynbos-lt)}
+.wm-i:nth-child(2){background:var(--apricot-lt)}
+.wm-i:nth-child(3){background:var(--protea-lt)}
+.wm-i h3{font-size:20px;margin-bottom:10px}
+.wm-i p{font-size:16px;color:var(--ink-2)}
+.wm-final{font:700 clamp(24px,3.2vw,36px)/1.2 var(--display);letter-spacing:-.025em;margin-top:56px;max-width:22ch}
+@media (max-width:860px){.wm-top,.wm-grid{grid-template-columns:1fr;gap:18px}.wm-lead{font-size:18px}}
+
 /* мобильная кнопка */
 .mcta{position:fixed;left:16px;right:16px;bottom:max(14px,env(safe-area-inset-bottom));z-index:40;transform:translateY(140%);transition:transform .35s;display:none}
 .mcta.on{transform:none}
@@ -543,7 +556,7 @@ footer a{color:var(--shell)}
     <div>
       <h2>Марк</h2>
       <p class="org-role">Организатор, автор блога <a href="https://instagram.com/pov.markiz" target="_blank" rel="noopener">@pov.markiz</a></p>
-      <p>Сертифицированный яхтенный капитан и путешественник. Уже несколько лет вожу небольшие группы в путешествия по Турции, Канарам, Мадейре, Японии, Африке и дальше. Для меня это не работа, а способ показать людям мир так, как я вижу его сам.</p>
+      <p>Сертифицированный яхтенный капитан и путешественник. Уже несколько лет вожу небольшие группы в путешествия по Турции, Канарам, Мадейре, Японии, Африке и дальше.</p>
     </div>
   </div>
 </section>
@@ -610,7 +623,7 @@ footer a{color:var(--shell)}
     <ol class="steps">
       <li><h3>Напиши в Telegram</h3><p>Расскажу детали и отвечу на первые вопросы.</p></li>
       <li><h3>Обсудим всё важное</h3><p>Перелёт, размещение, бюджет, ожидания от поездки.</p></li>
-      <li><h3>Созвонимся</h3><p>Перед бронью знакомимся на коротком созвоне, чтобы группа была своей.</p></li>
+      <li><h3>Звонок-знакомство</h3><p>Перед бронированием проводим небольшую встречу. Это важный этап, который даёт понять, кто едет рядом и будет ли всем участникам комфортно друг с другом.</p></li>
       <li><h3>Внеси предоплату</h3><p>50% фиксируют место за тобой.</p></li>
     </ol>
     <div class="book-cta">
@@ -618,6 +631,21 @@ footer a{color:var(--shell)}
     </div>
   </div>
   <div class="band" role="presentation"></div>
+</section>
+
+<section class="sec why-me" id="why-me">
+  <div class="wrap">
+    <div class="wm-top">
+      <h2>Зачем я это делаю</h2>
+      <p class="wm-lead">По основной профессии я продакт-менеджер. Однажды я заметил удивительную вещь: в поездках у меня не болит голова, я просыпаюсь рано и чувствую себя прекрасно, совсем не как дома. Каким бы загруженным я ни был, путешествия всегда помогали выдохнуть и снова почувствовать вкус жизни. Так они и стали её неотъемлемой частью.</p>
+    </div>
+    <div class="wm-grid">
+      <div class="wm-i"><h3>Каждая поездка как кино</h3><p>Я снимаю его на дрон, камеру и телефон. А сценарий складывается из мест, которые хочется показать: редких, настоящих, где бывали единицы.</p></div>
+      <div class="wm-i"><h3>Команда остаётся</h3><p>Я за лёгкость, открытость и дружбу. После туров мы продолжаем общаться, видимся, снова едем куда-то вместе, помогаем друг другу, открываем новое и вдохновляем.</p></div>
+      <div class="wm-i"><h3>Здесь рады каждому</h3><p>Неважно, едете вы в такую поездку впервые или уже не в первый раз. Вы обязательно найдёте здесь себя.</p></div>
+    </div>
+    <p class="wm-final">Главное — добро, которое мы несём в мир.</p>
+  </div>
 </section>
 </main>
 
