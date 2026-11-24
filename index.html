@@ -83,7 +83,7 @@ h2{font-size:clamp(28px,4vw,44px);font-weight:700;max-width:18ch}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(23,50,63,.45) 0%,rgba(23,50,63,.18) 30%,rgba(23,50,63,.28) 50%,rgba(23,50,63,.72) 100%)}
 .hero-in{padding-bottom:40px;padding-top:150px}
 .hero-kicker{font-size:16px;margin-bottom:18px;opacity:.95}
-.hero h1{font-size:clamp(54px,14vw,168px);font-weight:700;letter-spacing:-.045em;line-height:.92;margin-left:-.03em}
+.hero h1{font-size:clamp(48px,11.5vw,150px);font-weight:700;letter-spacing:-.045em;line-height:.92;margin-left:-.03em}
 .hero-sub{font-size:clamp(18px,2.4vw,24px);margin-top:18px;max-width:30ch;line-height:1.35}
 .facts{position:relative;background:var(--shell);color:var(--ink);border-radius:22px 22px 0 0;margin-top:36px}
 .facts-grid{display:grid;grid-template-columns:repeat(4,1fr) auto;align-items:center}
@@ -100,6 +100,7 @@ h2{font-size:clamp(28px,4vw,44px);font-weight:700;max-width:18ch}
 .facts + .band{background-color:var(--shell)}
 
 .hero>.wrap{width:100%}
+@media (min-width:1000px){.hero .hero-in h1{font-size:clamp(72px,7.4vw,120px)}}
 /* интро */
 .intro{background:var(--shell);padding:84px 0 96px}
 .intro-grid{display:grid;grid-template-columns:5fr 6fr;gap:48px;align-items:start}
@@ -356,7 +357,7 @@ footer a{color:var(--shell)}
 
 <header class="nav" id="nav">
   <div class="nav-in">
-    <a class="logo" href="#top">pov.markiz</a>
+    <a class="logo" href="https://povmarkiz.github.io/">The Crew</a>
     <nav class="nav-links" aria-label="Разделы">
       <a href="#route">Маршрут</a>
       <a href="#villas">Виллы</a>
@@ -371,7 +372,7 @@ footer a{color:var(--shell)}
 <section class="hero">
   <img class="hero-img" src="assets/img/st-hero-s.webp" srcset="assets/img/st-hero-s.webp 800w, assets/img/st-hero.webp 1600w" sizes="100vw" alt="Camps Bay и горы Двенадцать апостолов на закате" loading="eager" decoding="async">
   <div class="wrap hero-in">
-    <p class="hero-kicker">Авторский тур с pov.markiz</p>
+    <p class="hero-kicker">Авторский тур The Crew</p>
     <h1>Кейптаун</h1>
     <p class="hero-sub">Африка, которую вы себе не представляли. Океан, горы и закаты на краю континента.</p>
   </div>
@@ -752,7 +753,7 @@ footer a{color:var(--shell)}
 
 <footer>
   <div class="wrap">
-    <span>Кейптаун, ЮАР. Авторский тур, февраль 2027</span>
+    <span>The Crew. Кейптаун, февраль 2027</span>
     <a href="https://instagram.com/pov.markiz" target="_blank" rel="noopener">@pov.markiz</a>
   </div>
 </footer>
